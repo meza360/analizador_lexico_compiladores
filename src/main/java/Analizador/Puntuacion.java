@@ -11,7 +11,7 @@ package Analizador;
  */
 public class Puntuacion {
       public int aceptacion(String cadenaRecibida){
-        String[] puntuaciones = {".",","};
+        String[] puntuaciones = {"\\.","\\,"};
         boolean puntuacion = false;
        
        
