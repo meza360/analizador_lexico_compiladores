@@ -49,7 +49,7 @@ public class Separador {
                  //se enviaria cuerdas[i] dentro de este for
                  
                  //Si se necesita que se envien los caracteres inviduales
-                 //se envian caracteres[i] dentro de este for
+                 //se envian caracteres[j] dentro de este for
                  
                  
                  
