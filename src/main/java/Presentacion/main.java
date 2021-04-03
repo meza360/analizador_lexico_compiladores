@@ -9,6 +9,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import javax.swing.text.TableView;
 import Separador.*;
+import Tabla.*;
+import Analizador.*;
 
 /**
  *
@@ -28,7 +30,7 @@ public class main extends javax.swing.JFrame {
     modelo = new DefaultTableModel();
     this.jTable1.setModel(modelo);
     this.jTable1.setRowHeight(25);
-    String columnas[] = {"Id de clase","Cadena","Valido"};    
+    String columnas[] = {"Token","Id de clase","Cadena","Valido"};    
     modelo.setColumnIdentifiers(columnas);
     
     //modelado de las columnas
@@ -173,9 +175,28 @@ public class main extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
+        int idClase;
+        
+        
         Separador enlaceSeparador = new Separador();
+        Reservadas enlaceReservadas = new Reservadas();
+        ModeloTabla enlaceModeloTabla = new ModeloTabla();
         String cadenaUsuario = this.jTextField1.getText();
-        enlaceSeparador.separadorLexico(cadenaUsuario);
+        int tokens;
+        tokens = enlaceSeparador.separadorLexico(cadenaUsuario,modelo);
+        
+        
+        
+        enlaceSeparador.separadorLexico(cadenaUsuario, modelo);
+//        for (int i = 0; i < tokens; i++) {
+//            
+//            
+//           // modelo.addRow(new Object[]{1,,2,1});
+//            
+//        }
+        
+        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

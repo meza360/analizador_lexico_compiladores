@@ -6,6 +6,8 @@
 package Separador;
 
 import java.util.StringTokenizer;
+import Analizador.*;
+import javax.swing.table.DefaultTableModel;
 
 
 
@@ -15,12 +17,19 @@ import java.util.StringTokenizer;
  */
 public class Separador {
     
-    public Separador(){}
+    public Reservadas enlaceReservadas;
+    public Separador(){
     
-    public void separadorLexico(String cadenaRecibida){
+    }
+    
+    public int separadorLexico(String cadenaRecibida,DefaultTableModel modelo2){
+        modelo2.setNumRows(0);
         
+        Reservadas enlaceReservadas = new Reservadas();
+        Puntuacion enlacePuntuacion = new Puntuacion();
+        OperadorAritmetico enlaceOperadorAritmetico = new OperadorAritmetico();
         //se crean los elementos para separar las cadenas
-        String[] cuerdas = new String[20];
+        String[] cuerdas;// = new String[20];
         char[] caracteres = new char[20];
         StringTokenizer contador;
         int contador2;
@@ -46,18 +55,35 @@ public class Separador {
                 System.out.println("El caracter es: " + caracteres[j]);//se imprime el caracter
                  //ANOTACION PARA EL EQUIPO
                  //Si necesitan que se envie la cadena completa para verificarla y asignarle la clase
-                 //se enviaria cuerdas[i] dentro de este for
+                 //se enviaria cuerdas[i] dentro del primer for
+                 //primer enlace para validar si es una palabra reservada
                  
+                 //enlaceReservadas.aceptacion(cuerdas[i].toString());
                  //Si se necesita que se envien los caracteres inviduales
                  //se envian caracteres[j] dentro de este for
-                 
-                 
-                 
-            }
+             }
+                 if (enlaceReservadas.aceptacion(cuerdas[i]) == 100) {
+                     modelo2.addRow(new Object[]{100,cuerdas[i],"Valida"});
+                 }
+                 else if(enlaceOperadorAritmetico.aceptacion(cuerdas[i]) == 200){
+                  modelo2.addRow(new Object[]{200,cuerdas[i],"Operador"});
+                 }
+                 else if(enlacePuntuacion.aceptacion(cuerdas[i]) == 300){
+                  modelo2.addRow(new Object[]{300,cuerdas[i],"Puntuacion"});
+                 }
+                     
+//                 else if(enlaceValidacion.metodoDeValidacion(cuerdas[i]) == true)
+//                 {
+                 // modelo2.addRow(new Object[]{200,cuerdas[i],"valida" o "no valida"});
+//                    }
+                 else
+                 {
+                    modelo2.addRow(new Object[]{500,cuerdas[i],"No valida"});
+                 }
 
              //este for no deberia de tener otra funcion de momento
         }
-           
+          return cuerdas.length; 
     }
     
 }
