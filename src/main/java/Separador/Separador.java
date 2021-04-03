@@ -50,6 +50,9 @@ public class Separador {
                  
                  //Si se necesita que se envien los caracteres inviduales
                  //se envian caracteres[i] dentro de este for
+                 
+                 
+                 
             }
 
              //este for no deberia de tener otra funcion de momento
