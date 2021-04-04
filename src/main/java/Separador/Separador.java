@@ -9,12 +9,14 @@ import java.util.StringTokenizer;
 import Analizador.*;
 import javax.swing.table.DefaultTableModel;
 
-
-
 /**
  *
  * @author GIOVANI DAVID MEZA POGGIO 5990-18-14676 SECCION A
+ * Julio Alberto Farfan Ortiz 5990-16-9943 SECCION A
+ * Hanier Iván Cordero Morales 5990-15-13370 SECCION A
+ * Armando Otoniel Pineda Perez 5990-17-672 SECCION A
  */
+
 public class Separador {
     
     public Reservadas enlaceReservadas;
@@ -71,18 +73,13 @@ public class Separador {
                  }
                  else if(enlacePuntuacion.aceptacion(cuerdas[i]) == 300){
                   modelo2.addRow(new Object[]{300,cuerdas[i],"Puntuacion"});
-                 }
- /**
- *
- * @author Hanier Iván Cordero Morales 5990-15-13370 SECCION A
- */
-                     
-                 else if(enlaceValidacion.aceptacion(cuerdas[i]) == 400){
-                       modelo2.addRow(new Object[]{400,cuerdas[i],"valida"});
+                 }    
+                 else if(enlaceValidacion.aceptacion(cuerdas[i], contador2) == 400){
+                       modelo2.addRow(new Object[]{400,cuerdas[i],"Valida"});
                     }
-                else
+                 else 
                  {
-                    modelo2.addRow(new Object[]{500,cuerdas[i],"No valida"});
+                    modelo2.addRow(new Object[]{500,cuerdas[i],"No Valida"});
                  }
 
              //este for no deberia de tener otra funcion de momento
