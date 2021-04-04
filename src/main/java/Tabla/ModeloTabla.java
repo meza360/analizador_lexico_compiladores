@@ -12,6 +12,7 @@ import javax.swing.text.TableView;
 /**
  *
  * @author giova
+ * Julio Alberto Farfan Ortiz 5990-16-9943
  */
 public class ModeloTabla {
     

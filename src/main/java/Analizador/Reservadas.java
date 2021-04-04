@@ -8,6 +8,7 @@ package Analizador;
 /**
  *
  * @author GIOVANI DAVID MEZA POGGIO
+ * Julio Alberto Farfan Ortiz
  */
 public class Reservadas {
     

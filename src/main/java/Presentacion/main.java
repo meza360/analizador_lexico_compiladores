@@ -9,6 +9,7 @@ import Presentacion.*;
 /**
  *
  * @author giova
+ * Julio Alberto Farfan Ortiz 5990-16-9943
  */
 public class main {
 

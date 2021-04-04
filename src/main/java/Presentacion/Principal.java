@@ -15,6 +15,7 @@ import Analizador.*;
 /**
  *
  * @author GIOVANI DAVID MEZA POGGIO 5990-18-14676 SECCION A
+ * Julio Alberto Farfan Ortiz 5990-16-9943
  */
 public class Principal extends javax.swing.JFrame {
 
