@@ -33,7 +33,7 @@ public class Principal extends javax.swing.JFrame {
     modelo = new DefaultTableModel();
     this.jTable1.setModel(modelo);
     this.jTable1.setRowHeight(25);
-    String columnas[] = {"Token","Id de clase","Cadena","Valido"};    
+    String columnas[] = {"Id de clase","Cadena","Valido"};    
     modelo.setColumnIdentifiers(columnas);
     
     //modelado de las columnas
@@ -73,6 +73,7 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(800, 600));
         setPreferredSize(new java.awt.Dimension(800, 600));
+        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(500, 500));
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
@@ -90,9 +91,9 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setText("Ingrese una cadena");
 
         jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField1.setMaximumSize(new java.awt.Dimension(200, 20));
-        jTextField1.setMinimumSize(new java.awt.Dimension(200, 20));
-        jTextField1.setPreferredSize(new java.awt.Dimension(400, 20));
+        jTextField1.setMaximumSize(new java.awt.Dimension(200, 30));
+        jTextField1.setMinimumSize(new java.awt.Dimension(200, 30));
+        jTextField1.setPreferredSize(new java.awt.Dimension(400, 30));
 
         jButton1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jButton1.setText("Analizar");
@@ -149,7 +150,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -192,14 +193,7 @@ public class Principal extends javax.swing.JFrame {
         
         
         enlaceSeparador.separadorLexico(cadenaUsuario, modelo);
-//        for (int i = 0; i < tokens; i++) {
-//            
-//            
-//           // modelo.addRow(new Object[]{1,,2,1});
-//            
-//        }
-        
-        
+  
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

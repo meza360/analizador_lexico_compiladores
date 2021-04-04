@@ -66,7 +66,7 @@ public class Separador {
                  //se envian caracteres[j] dentro de este for
              }
                  if (enlaceReservadas.aceptacion(cuerdas[i]) == 100) {
-                     modelo2.addRow(new Object[]{100,cuerdas[i],"Valida"});
+                     modelo2.addRow(new Object[]{100,cuerdas[i],"Valida,reservada"});
                  }
                  else if(enlaceOperadorAritmetico.aceptacion(cuerdas[i]) == 200){
                   modelo2.addRow(new Object[]{200,cuerdas[i],"Operador"});
