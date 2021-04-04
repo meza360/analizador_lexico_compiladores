@@ -8,6 +8,7 @@ package Analizador;
 /**
  *
  * @author giova
+ * Julio Alberto Farafan Ortiz 5990-16-9943
  */
 public class Puntuacion {
       public int aceptacion(String cadenaRecibida){
