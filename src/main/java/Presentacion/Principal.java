@@ -9,7 +9,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import javax.swing.text.TableView;
 import Separador.*;
-import Tabla.*;
 import Analizador.*;
 
 /**
@@ -80,10 +79,10 @@ public class Principal extends javax.swing.JFrame {
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Instrucciones de uso:\n Este programa es una demostracion del funcionamiento basico de un analizador lexico, componente esencial en un compilador.\n El lenguaje permitido en las cadenas incluye {a,e,i,o,u,m,p}. \n Se incluyen varias palabras reservadas, siendo estas, las mismas que el lenguaje Java, pero en español. { aiu, aim, aip, aii, aaa}\n Se pueden ingresar operadores aritmeticos como {+,-,*,/} como tambien el operador de asignacion { = } \nLas cadenas pueden estar unicamente separas por un espacio simple, no doble, como solo se admite el signo de puntuacion punto (.)");
+        jTextArea1.setText("Instrucciones de uso:\n Este programa es una demostracion del funcionamiento basico de un analizador lexico, componente esencial en un compilador.\n El lenguaje permitido en las cadenas incluye {a,e,i,o,u,m,p}. \n Se incluyen varias palabras reservadas, siendo estas { aiu, aim, aip, aii, aaa}\n Se pueden ingresar operadores aritmeticos como {+,-,*,/} como tambien el operador de asignacion { = } \nLas cadenas pueden estar unicamente separas por un espacio simple, no doble, como solo se admite el signo de puntuacion punto (.)");
         jTextArea1.setMaximumSize(new java.awt.Dimension(725, 88));
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -126,14 +125,14 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(39, 39, 39)
+                        .addGap(35, 35, 35)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(47, 47, 47)
-                        .addComponent(jButton1))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                        .addComponent(jButton1)))
                 .addContainerGap(48, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -144,13 +143,13 @@ public class Principal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -179,21 +178,14 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
-        int idClase;
-        
-        
+
         Separador enlaceSeparador = new Separador();
         Reservadas enlaceReservadas = new Reservadas();
-        ModeloTabla enlaceModeloTabla = new ModeloTabla();
         String cadenaUsuario = this.jTextField1.getText();
         int tokens;
         tokens = enlaceSeparador.separadorLexico(cadenaUsuario,modelo);
         
-        
-        
         enlaceSeparador.separadorLexico(cadenaUsuario, modelo);
-  
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

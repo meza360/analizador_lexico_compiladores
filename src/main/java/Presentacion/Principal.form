@@ -64,15 +64,15 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Component id="jScrollPane2" min="-2" pref="695" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane2" min="-2" pref="695" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="48" max="32767" attributes="0"/>
               </Group>
@@ -87,14 +87,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="114" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="143" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="41" max="32767" attributes="0"/>
+                  <EmptySpace pref="12" max="32767" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="301" max="-2" attributes="0"/>
@@ -116,11 +116,11 @@
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial" size="12" style="0"/>
+                  <Font name="Arial" size="14" style="0"/>
                 </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Instrucciones de uso:&#xa; Este programa es una demostracion del funcionamiento basico de un analizador lexico, componente esencial en un compilador.&#xa; El lenguaje permitido en las cadenas incluye {a,e,i,o,u,m,p}. &#xa; Se incluyen varias palabras reservadas, siendo estas, las mismas que el lenguaje Java, pero en espa&#xf1;ol. { aiu, aim, aip, aii, aaa}&#xa; Se pueden ingresar operadores aritmeticos como {+,-,*,/} como tambien el operador de asignacion { = } &#xa;Las cadenas pueden estar unicamente separas por un espacio simple, no doble, como solo se admite el signo de puntuacion punto (.)"/>
+                <Property name="text" type="java.lang.String" value="Instrucciones de uso:&#xa; Este programa es una demostracion del funcionamiento basico de un analizador lexico, componente esencial en un compilador.&#xa; El lenguaje permitido en las cadenas incluye {a,e,i,o,u,m,p}. &#xa; Se incluyen varias palabras reservadas, siendo estas { aiu, aim, aip, aii, aaa}&#xa; Se pueden ingresar operadores aritmeticos como {+,-,*,/} como tambien el operador de asignacion { = } &#xa;Las cadenas pueden estar unicamente separas por un espacio simple, no doble, como solo se admite el signo de puntuacion punto (.)"/>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[725, 88]"/>
                 </Property>

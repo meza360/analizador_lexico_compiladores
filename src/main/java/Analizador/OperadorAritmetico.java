@@ -16,14 +16,14 @@ public class OperadorAritmetico {
     
     
     public int aceptacion(String cadenaRecibida){
-        String[] operadores = {"\\+","\\-","\\*","\\/"};
+        String[] operadores = {"\\+","\\-","\\*","\\/","\\="};
         boolean operador = false;
        
        
             //System.out.println("\nLa cadena en el array es " + reservadas[i]);
             System.out.println("\nLa cadena recibida es: " + cadenaRecibida);
             
-            if (cadenaRecibida.matches(operadores[0]) || cadenaRecibida.matches(operadores[1]) || cadenaRecibida.matches(operadores[2]) || cadenaRecibida.matches(operadores[3])) {
+            if (cadenaRecibida.matches(operadores[0]) || cadenaRecibida.matches(operadores[1]) || cadenaRecibida.matches(operadores[2]) || cadenaRecibida.matches(operadores[3]) || cadenaRecibida.matches(operadores[4])) {
                 
                 operador = true;
                 System.out.println("Coinciden? " + operador);
