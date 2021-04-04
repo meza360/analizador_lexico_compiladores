@@ -14,7 +14,6 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author GIOVANI DAVID MEZA POGGIO 5990-18-14676 SECCION A
- * Julio Alberto Farfan Ortiz 5990-16-9943
  */
 public class Separador {
     
@@ -29,6 +28,7 @@ public class Separador {
         Reservadas enlaceReservadas = new Reservadas();
         Puntuacion enlacePuntuacion = new Puntuacion();
         OperadorAritmetico enlaceOperadorAritmetico = new OperadorAritmetico();
+        validador enlaceValidacion = new validador();
         //se crean los elementos para separar las cadenas
         String[] cuerdas;// = new String[20];
         char[] caracteres = new char[20];
@@ -72,12 +72,15 @@ public class Separador {
                  else if(enlacePuntuacion.aceptacion(cuerdas[i]) == 300){
                   modelo2.addRow(new Object[]{300,cuerdas[i],"Puntuacion"});
                  }
+ /**
+ *
+ * @author Hanier Iván Cordero Morales 5990-15-13370 SECCION A
+ */
                      
-//                 else if(enlaceValidacion.metodoDeValidacion(cuerdas[i]) == true)
-//                 {
-                 // modelo2.addRow(new Object[]{200,cuerdas[i],"valida" o "no valida"});
-//                    }
-                 else
+                 else if(enlaceValidacion.aceptacion(cuerdas[i]) == 400){
+                       modelo2.addRow(new Object[]{400,cuerdas[i],"valida"});
+                    }
+                else
                  {
                     modelo2.addRow(new Object[]{500,cuerdas[i],"No valida"});
                  }
