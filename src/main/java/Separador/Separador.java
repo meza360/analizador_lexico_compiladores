@@ -23,14 +23,34 @@ import AnalizadorSemantico.*;
 
 public class Separador {
     
-    
+        List listaPalabras = new ArrayList<>();
+        List listaParcial = new ArrayList<>();
+        
     public Separador(){
     
     }
+
+    public List getListaPalabras() {
+        return listaPalabras;
+    }
+
+    public void setListaPalabras(List listaPalabras) {
+        this.listaPalabras = listaPalabras;
+    }
+
+    public List getListaParcial() {
+        return listaParcial;
+    }
+
+    public void setListaParcial(List listaParcial) {
+        this.listaParcial = listaParcial;
+    }
+    
+    
+    
     
     public int separadorLexico(String cadenaRecibida,DefaultTableModel modelo2){
-        List listaPalabras = new ArrayList<>();
-        List listaParcial = new ArrayList<>();
+        
         modelo2.setNumRows(0);
         
         Principal enlacePresentacion = new Principal();
@@ -115,8 +135,8 @@ public class Separador {
                     modelo2.addRow(new Object[]{800,cuerdas[i],"No Valida"});
                  }
                  System.out.println("La listaPalabras en la posicion: " + i + "\nContiene: " + listaPalabras.get(i));
-                 System.out.println("La listaParcial en la posicion: " + i + "\nContiene: " + listaParcial.get(i));
-                 enlacePresentacion.setListaLocal(listaParcial);
+                 System.out.println("La listaParcial en la posicion: " + i + "\nContiene: " + listaParcial.get(i) + "\nY tiene un tamaño de: " + listaParcial.size());
+                 enlacePresentacion.setListaLocal(this.getListaParcial());
              //este for no deberia de tener otra funcion de momento
         }
         

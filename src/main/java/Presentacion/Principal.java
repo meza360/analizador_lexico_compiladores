@@ -35,7 +35,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     public void setListaLocal(List listaLocal) {
-        this.listaLocal = listaLocal;
+        this.listaLocal.addAll(listaLocal);
     }
     
     
@@ -230,7 +230,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        System.out.println("La lista local tiene un tamaño de: " + this.listaLocal.size());
+        System.out.println("La lista local tiene un tamaño de: " + this.getListaLocal().size());
         AnalizadorSemantico enlaceAnalizador = new AnalizadorSemantico(this.getListaLocal());
         enlaceAnalizador.analizador(this.getListaLocal());
  
