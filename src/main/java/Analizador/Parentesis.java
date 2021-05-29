@@ -7,15 +7,11 @@ package Analizador;
 
 /**
  *
- * @author GIOVANI DAVID MEZA POGGIO 5990-18-14676 SECCION A
- * Julio Alberto Farfan Ortiz 5990-16-9943 SECCION A
- * Hanier Iván Cordero Morales 5990-15-13370 SECCION A
- * Armando Otoniel Pineda Perez 5990-17-672 SECCION A
+ * @author giova
  */
-public class Puntuacion {
-      
+public class Parentesis {
     public int aceptacion(String cadenaRecibida){
-        String[] puntuaciones = {"\\.","\\,"};
+        String[] puntuaciones = {"\\(","\\)"};
         boolean puntuacion = false;
        
        
@@ -26,7 +22,7 @@ public class Puntuacion {
                 
                 puntuacion = true;
                 System.out.println("Coinciden? " + puntuacion);
-                return 300;
+                return 600;
             }
             else
             {

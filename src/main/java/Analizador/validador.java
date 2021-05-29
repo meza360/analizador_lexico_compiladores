@@ -22,7 +22,7 @@ public class validador {
     public int aceptacion(String cadenaRecibida,int cantidadCaracteres){
         
         
-        char[] validas = {'a','e','i','o','u','m','p'};
+        char[] validas = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
         char[] caracteresSeparados;
         int valido = 4;
         //se inicia la separacion
