@@ -21,6 +21,7 @@ import java.util.List;
  * Hanier Iván Cordero Morales 5990-15-13370 SECCION A
  * Armando Otoniel Pineda Perez 5990-17-672 SECCION A
  */
+
 public class Principal extends javax.swing.JFrame {
 
     
@@ -233,7 +234,6 @@ public class Principal extends javax.swing.JFrame {
         System.out.println("La lista local tiene un tamaño de: " + this.getListaLocal().size());
         AnalizadorSemantico enlaceAnalizador = new AnalizadorSemantico(this.getListaLocal());
         enlaceAnalizador.analizador(this.getListaLocal());
- 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     

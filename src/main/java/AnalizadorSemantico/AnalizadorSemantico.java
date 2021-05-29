@@ -10,7 +10,10 @@ import java.util.List;
 import java.util.ArrayList;
 /**
  *
- * @author giova
+ * @author GIOVANI DAVID MEZA POGGIO 5990-18-14676 SECCION A
+ * Julio Alberto Farfan Ortiz 5990-16-9943 SECCION A
+ * Hanier Iván Cordero Morales 5990-15-13370 SECCION A
+ * Armando Otoniel Pineda Perez 5990-17-672 SECCION A
  */
 public class AnalizadorSemantico {
     
